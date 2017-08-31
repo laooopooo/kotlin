@@ -583,20 +583,16 @@ class DeclarationsChecker(
             trace.report(INAPPLICABLE_LATEINIT_MODIFIER.on(modifier, "is allowed only on mutable properties"))
         }
 
-        var returnTypeIsNullable = true
-        var returnTypeIsPrimitive = true
-
         val returnType = propertyDescriptor.returnType
-        if (returnType != null) {
-            returnTypeIsNullable = TypeUtils.isNullableType(returnType)
-            returnTypeIsPrimitive = KotlinBuiltIns.isPrimitiveType(returnType)
-        }
 
-        if (returnTypeIsNullable) {
+        if (returnType == null || returnType.isMarkedNullable) {
             trace.report(INAPPLICABLE_LATEINIT_MODIFIER.on(modifier, "is not allowed on nullable properties"))
         }
+        else if (TypeUtils.isNullableType(returnType)) {
+            trace.report(INAPPLICABLE_LATEINIT_MODIFIER.on(modifier, "is not allowed on properties of a type with nullable upper bound"))
+        }
 
-        if (returnTypeIsPrimitive) {
+        if (returnType == null || KotlinBuiltIns.isPrimitiveType(returnType)) {
             trace.report(INAPPLICABLE_LATEINIT_MODIFIER.on(modifier, "is not allowed on primitive type properties"))
         }
 
