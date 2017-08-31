@@ -48,14 +48,18 @@
       <module name="compiler.tests-common_test" target="1.8" />
       <module name="compiler_main" target="1.8" />
       <module name="compiler_test" target="1.8" />
+      <module name="conditional-preprocessor_main" target="1.8" />
+      <module name="conditional-preprocessor_test" target="1.8" />
       <module name="container_main" target="1.8" />
       <module name="container_test" target="1.8" />
-      <module name="core_main" target="1.8" />
-      <module name="core_test" target="1.8" />
+      <module name="core_main" target="1.6" />
+      <module name="core_test" target="1.6" />
       <module name="daemon-client_main" target="1.8" />
       <module name="daemon-client_test" target="1.8" />
       <module name="daemon-common_main" target="1.8" />
       <module name="daemon-common_test" target="1.8" />
+      <module name="daemon_main" target="1.8" />
+      <module name="daemon_test" target="1.8" />
       <module name="eval4j_main" target="1.8" />
       <module name="eval4j_test" target="1.8" />
       <module name="frontend.java_main" target="1.8" />
@@ -94,6 +98,8 @@
       <module name="ir.tree_test" target="1.8" />
       <module name="j2k_main" target="1.8" />
       <module name="j2k_test" target="1.8" />
+      <module name="jps-plugin_main" target="1.8" />
+      <module name="jps-plugin_test" target="1.8" />
       <module name="js.ast_main" target="1.8" />
       <module name="js.ast_test" target="1.8" />
       <module name="js.dce_main" target="1.8" />
@@ -114,6 +120,14 @@
       <module name="kotlin-allopen_test" target="1.8" />
       <module name="kotlin-annotation-processing_main" target="1.8" />
       <module name="kotlin-annotation-processing_test" target="1.8" />
+      <module name="kotlin-ant_main" target="1.8" />
+      <module name="kotlin-ant_test" target="1.8" />
+      <module name="kotlin-build-common_main" target="1.8" />
+      <module name="kotlin-build-common_test" target="1.8" />
+      <module name="kotlin-compiler-client-embeddable_main" target="1.8" />
+      <module name="kotlin-compiler-client-embeddable_test" target="1.8" />
+      <module name="kotlin-daemon-client_main" target="1.8" />
+      <module name="kotlin-daemon-client_test" target="1.8" />
       <module name="kotlin-gradle-plugin-api_main" target="1.8" />
       <module name="kotlin-gradle-plugin-api_test" target="1.8" />
       <module name="kotlin-gradle-plugin-integration-tests_main" target="1.8" />
@@ -129,14 +143,20 @@
       <module name="kotlin-jps-plugin_test" target="1.8" />
       <module name="kotlin-noarg_main" target="1.8" />
       <module name="kotlin-noarg_test" target="1.8" />
+      <module name="kotlin-preloader_main" target="1.8" />
+      <module name="kotlin-preloader_test" target="1.8" />
       <module name="kotlin-reflect_main" target="1.6" />
       <module name="kotlin-reflect_test" target="1.6" />
+      <module name="kotlin-runner_main" target="1.8" />
+      <module name="kotlin-runner_test" target="1.8" />
       <module name="kotlin-runtime_main" target="1.6" />
       <module name="kotlin-runtime_test" target="1.6" />
       <module name="kotlin-sam-with-receiver_main" target="1.8" />
       <module name="kotlin-sam-with-receiver_test" target="1.8" />
       <module name="kotlin-script-runtime_main" target="1.6" />
       <module name="kotlin-script-runtime_test" target="1.6" />
+      <module name="kotlin-source-sections-compiler-plugin_main" target="1.8" />
+      <module name="kotlin-source-sections-compiler-plugin_test" target="1.8" />
       <module name="kotlin-stdlib-common_main" target="1.8" />
       <module name="kotlin-stdlib-common_test" target="1.8" />
       <module name="kotlin-stdlib-gen_main" target="1.8" />
@@ -168,8 +188,8 @@
       <module name="light-classes_test" target="1.8" />
       <module name="lint_main" target="1.8" />
       <module name="lint_test" target="1.8" />
-      <module name="mock-runtime-for-test_main" target="1.8" />
-      <module name="mock-runtime-for-test_test" target="1.8" />
+      <module name="mock-runtime-for-test_main" target="1.6" />
+      <module name="mock-runtime-for-test_test" target="1.6" />
       <module name="noarg-cli_main" target="1.8" />
       <module name="noarg-cli_test" target="1.8" />
       <module name="noarg-ide_main" target="1.8" />
@@ -206,8 +226,8 @@
       <module name="uast-kotlin-idea_test" target="1.8" />
       <module name="uast-kotlin_main" target="1.8" />
       <module name="uast-kotlin_test" target="1.8" />
-      <module name="util.runtime_main" target="1.8" />
-      <module name="util.runtime_test" target="1.8" />
+      <module name="util.runtime_main" target="1.6" />
+      <module name="util.runtime_test" target="1.6" />
       <module name="util_main" target="1.8" />
       <module name="util_test" target="1.8" />
     </bytecodeTargetLevel>
